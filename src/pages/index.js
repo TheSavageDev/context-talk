@@ -1,7 +1,7 @@
 import React from 'react'
 import { AProvider } from '../context/AContext'
 import { BProvider } from '../context/BContext'
-import { TheProvider } from '../context/TheContext'
+import { TheABProvider } from '../context/TheContext'
 import ADisplay from '../components/ADisplay'
 import BDisplay from '../components/BDisplay'
 import TheDisplay from '../components/TheDisplay'
@@ -9,7 +9,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
-  <TheProvider>
+  <TheABProvider>
     <Layout>
       <SEO title="Home" />
       <TheDisplay
@@ -32,7 +32,7 @@ const IndexPage = () => (
         </BProvider>
       </div>
     </Layout>
-  </TheProvider>
+  </TheABProvider>
 )
 
 export default IndexPage

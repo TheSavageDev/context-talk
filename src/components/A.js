@@ -39,7 +39,7 @@ export default function A() {
   }
 
   function handleStoreData() {
-    dispatch({ type: `STORE` })
+    dispatch({ type: types.STORE })
     try {
       if (response !== null) {
         localStorage.setItem(`aResponse`, JSON.stringify(response))
@@ -52,23 +52,23 @@ export default function A() {
   }
 
   function handleDropData() {
-    dispatch({ type: `DROP` })
+    dispatch({ type: types.DROP })
     try {
       localStorage.removeItem(`aResponse`)
     } catch (err) {
       dispatch({
-        type: `STORE_ERROR`,
+        type: types.STORE_ERROR,
         errorMessage: `Could not find item to drop`,
       })
     }
   }
 
   function handleCopyBContext() {
-    dispatch({ type: `GET_B` })
+    dispatch({ type: types.GET_B })
     if (localStorage.getItem(`bResponse`)) {
       const bResponse = localStorage.getItem(`bResponse`)
       localStorage.setItem(`aResponse`, bResponse)
-      dispatch({ type: `GOT_B`, response: JSON.parse(bResponse) })
+      dispatch({ type: types.GOT_B, response: JSON.parse(bResponse) })
     } else {
       throw new Error(`Something went wrong.`)
     }

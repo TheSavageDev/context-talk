@@ -294,10 +294,30 @@ This is literally the same thing. Just instead of the `GET`, `GOT`, `FETCH` etc 
 
 
 ```js
-// TODO This
+import { AProvider } from '../AContext'
+import { BProvider } from '../BContext'
+
+...
+
+export function TheABProvider({ children }) {
+  const [state, dispatch] = useReducer(theReducer, {
+    message: `Data Not Swapped`,
+  });
+  return (
+    <TheStateContext.Provider value={state}>
+      <TheDispatchContext.Provider value={dispatch}>
+        <AProvider>
+          <BProvider>
+            {children}
+          </BProvider>
+        </AProvider>
+      </TheDispatchContext.Provider>
+    </TheStateContext.Provider>
+  )
+}
 ```
 
-300th Line. For some reason I've typed all of this. I've actually not copied and pasted anything. I need an alias for that.
+320th Line. For some reason I've typed all of this. I've actually not copied and pasted anything. I need an alias for that.
 
 ## Components Folder
 
