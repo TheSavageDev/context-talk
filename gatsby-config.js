@@ -30,7 +30,7 @@ module.exports = {
         background_color: `cornflowerblue`,
         theme_color: `cornflowerblue`,
         display: `minimal-ui`,
-        icon: `src/images/hbmlogo.svg`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
