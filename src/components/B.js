@@ -47,7 +47,7 @@ export default function B() {
         throw new Error(`Response item is empty, can't store empty object`)
       }
     } catch (err) {
-      dispatch({ type: `STORE_ERROR`, errorMessage: `Error Message` })
+      dispatch({ type: `STORE_ERROR`, errorMessage: `I told you not to do that.` })
     }
   }
 
