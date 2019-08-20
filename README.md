@@ -17,6 +17,10 @@
 
 Open your browser of choice to `localhost:8000`
 
+or if you don't want/have gatsby-cli installed go here:
+
+https://gracious-shannon-5c32da.netlify.com/
+
 Check it out!
 
 ### 📜 Things To Do
