@@ -25,7 +25,7 @@ Check it out!
 
 ### 📜 Things To Do
 
-Both A and B contexts should have automagically fetched a Dad Joke. You should have an ID, a Status of 200 and a Joke with four buttons below each side. Also an omnious section hanging out above them. We'll get to that later.
+Both A and B contexts should have automagically fetched a Dad Joke. You should have an ID, a Status of 200 and a Joke with four buttons below each side. Also an ominous section hanging out above them. We'll get to that later.
 
 The buttons below the text are dispatchable actions you can use to manipulate the data.
 
@@ -72,7 +72,7 @@ const ADispatchContext = createContext();
 
 Why do we split them? Because.
 
-Now we are going to save ourselves some nasty looking code later by putting it here. The `AProvider` will be a wrapper component for whever we want to use AContext.
+Now we are going to save ourselves some nasty looking code later by putting it here. The `AProvider` will be a wrapper component for wherever we want to use AContext.
 
 ```js
 export function AProvider({ children }) {
@@ -366,7 +366,7 @@ export default function ADisplay() {
 }
 ```
 
-So, we are distructuring `useAState()` and bringing in all the state items from the reducer. And dispatch, but we're not talking about that...yet.
+So, we are destructuring `useAState()` and bringing in all the state items from the reducer. And dispatch, but we're not talking about that...yet.
 
 The return is normal. As we're all used to.
 
