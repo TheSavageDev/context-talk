@@ -9,6 +9,7 @@
 
 ## 🚗 Test Drive
 
+`npm i -g gatsby-cli`
 `git clone git@github.cerner.com:js063531/context-talk.git`
 `cd context-talk`
 `npm i`

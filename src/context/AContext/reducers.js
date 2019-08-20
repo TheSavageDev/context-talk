@@ -38,7 +38,6 @@ export default function aReducer(state, { type, response, errorMessage }) {
       return {
         ...state,
         message: `Data Stored`,
-        response,
         loading: false,
         errorMessage: false,
       }
